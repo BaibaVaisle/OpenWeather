@@ -13,9 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+            // Override point for customization after application launch.
+            for family in UIFont.familyNames.sorted(){
+                let name = UIFont.fontNames(forFamilyName: family)
+    //            print("family: \(family) Font names: \(name)")
+            }
+            return true
+        }
 
     // MARK: UISceneSession Lifecycle
 
