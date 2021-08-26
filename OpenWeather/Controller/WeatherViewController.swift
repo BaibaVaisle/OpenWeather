@@ -70,7 +70,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     func updateUI(){
             cityLabel.text = weatherDataModel.city
             tempLabel.text = "\(weatherDataModel.temp)º"
-        weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
+       // weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
         }
         
         func userEnterCityName(city: String) {
